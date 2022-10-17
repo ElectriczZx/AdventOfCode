@@ -1,12 +1,17 @@
 ﻿using System;
+using static AdventOfCode.DayOne;
+using static AdventOfCode.DayTwo;
 
-namespace AdventOfCode // Note: actual namespace depends on the project name.
+namespace AdventOfCode
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /* AdventDayOne.Santa();
+            AdventDayTwo.Elves();
+            AdventDayTwo.ElvesRibbon(); */
+
         }
     }
 }

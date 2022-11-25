@@ -17,7 +17,7 @@ namespace AdventOfCode
             public static void HouseGrid()
             {
 
-                string input = System.IO.File.ReadAllText(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayThree.txt"); ;
+                string input = Inputstrg.InputData(3, 1);
                 var hs = new HashSet<Tuple<int, int>>();
                 var SantaPos = new Tuple<int, int>(0, 0);
                 var RoboSantaPos = new Tuple<int, int>(0, 0);

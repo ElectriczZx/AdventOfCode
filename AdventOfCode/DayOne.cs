@@ -16,7 +16,11 @@ namespace AdventOfCode
 
                 int floor = 0;
                 int pos = 0;
-                string text = System.IO.File.ReadAllText(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayOne.txt");
+                int day = 1;
+                int sub = 1;
+                string textIn = Inputstrg.InputData(day, sub);
+                AdventDAO.setInputForDaySub(day, sub, textIn);
+                string text = AdventDAO.getInputForDaySub(day, sub) ?? "";
                 foreach (char c in text)
                 {
                     pos++;
@@ -31,7 +35,7 @@ namespace AdventOfCode
                     }
                 }
 
-                System.Console.WriteLine("floor: " + floor);
+                Console.WriteLine("floor: " + floor);
 
             }
         }

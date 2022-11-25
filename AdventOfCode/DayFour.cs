@@ -17,29 +17,28 @@ namespace AdventOfCode
         public static void Santa()
         {
 
-            string input = "ckczppom";
+            string input = Inputstrg.InputData(4, 1);
             string hex = "";
             int num = 0;
             string firstFive = "";
             string input2 = "";
 
 
-            while (firstFive != "000000")
+            do
             {
-                     input2 = input + num;
-                     MD5 md5 = MD5.Create();
-                    {
-                        byte[] inputBytes = Encoding.ASCII.GetBytes(input2);
-                        byte[] hashBytes = md5.ComputeHash(inputBytes);
+                num++;
+                input2 = input + num;
+                MD5 md5 = MD5.Create();
+                {
+                    byte[] inputBytes = Encoding.ASCII.GetBytes(input2);
+                    byte[] hashBytes = md5.ComputeHash(inputBytes);
 
-                        hex = Convert.ToHexString(hashBytes);
+                    hex = Convert.ToHexString(hashBytes);
                 }
                 firstFive = new string(hex.Take(6).ToArray());
+            } while (firstFive != "000000");
 
-                num++;
-            }
-
-            System.Console.WriteLine(num-1);
+            System.Console.WriteLine(num);
             System.Console.WriteLine(hex);
         }
     }

@@ -11,11 +11,10 @@ namespace AdventOfCode
     {
         public class AdventDayTwo
         {
-
             public static void Elves()
             {
                 int totalPaper = 0;
-                foreach (string line in System.IO.File.ReadLines(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayTwo.txt"))
+                foreach (string line in File.ReadLines(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayTwo.txt"))
                 {
                     totalPaper += CalcLines(line);
                 }
@@ -25,7 +24,7 @@ namespace AdventOfCode
             public static void ElvesRibbon()
             {
                 int totalRibbon = 0;
-                foreach (string line in System.IO.File.ReadLines(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayTwo.txt"))
+                foreach (string line in File.ReadLines(@"C:\Users\nisba\source\repos\AdventOfCode\AdventOfCode\TextDayTwo.txt"))
                 {
                     totalRibbon += CalcLinesRibbon(line);
                 }

@@ -12,8 +12,10 @@ namespace AdventOfCode
             // AdventDayOne.Santa();
             // AdventDayTwo.Elves();
             // AdventDayTwo.ElvesRibbon();
-            AdventDayThree.HouseGrid(); 
+            // AdventDayThree.HouseGrid(); 
             // AdventDayFour.Santa();
+            // AdventDayFive.niceString();
+            AdventDayFive.niceStringPT();
         }
     }
 }
